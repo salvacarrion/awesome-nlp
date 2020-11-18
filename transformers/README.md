@@ -1,5 +1,13 @@
 # Architectures
 
+Types:
+
+- Seq2Seq: Encoder+Decoder
+- Autoregressive: Decoder
+- Autoencoding: Encoder
+- Multimodal
+- Retrival-based
+
 ## Seq2Seq: Enc+Dec
 
 ### BART
@@ -93,3 +101,19 @@
 ### Longformer
 
 [Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150), Iz Beltagy et al.
+
+## Multimodal
+
+### MMBT
+
+[Supervised Multimodal Bitransformers for Classifying Images and Text](https://arxiv.org/abs/1909.02950), Douwe Kiela et al.
+
+## Retrieval-based models
+
+### DPR
+
+[Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/abs/2004.04906), Vladimir Karpukhin et al.
+
+### RAG
+
+[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401), Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela
