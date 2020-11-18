@@ -12,9 +12,9 @@
 
 ### Unigram
 
-[Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates), Taku Kudo
+[Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959), Taku Kudo
 
 ### SentencePiece
 
-[SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing](SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing), Taku Kudo, John Richardson
+[SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing](https://arxiv.org/abs/1808.06226), Taku Kudo, John Richardson
 
