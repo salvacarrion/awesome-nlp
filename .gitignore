@@ -1,0 +1,4 @@
+# Developer environments
+*.DS_Store
+.idea
+.vscode
