@@ -16,6 +16,6 @@ Collection of NLP papers
     - [Seq2Seq](/transformers/architectures.md#seq2seq-encdec)
     - [Multimodal](/transformers/architectures.md#multimodal)
     - [Retrival-based](/transformers/architectures.md#retrieval-based-models)
-  - [Techniques](/transformers/techniques)
+  - [Techniques](/transformers/techniques.md)
 - [Translation](/translation)
 - [Other](/other)
