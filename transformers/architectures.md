@@ -102,6 +102,10 @@ Types:
 
 [Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150), Iz Beltagy et al.
 
+### GPT-3
+
+[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v2), by OpenAI
+
 ## Multimodal
 
 ### MMBT
