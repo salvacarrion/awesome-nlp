@@ -1,17 +1,18 @@
 # Awesome NLP
 Collection of NLP papers
 
-- Embeddings
+- [Embeddings](/embeddings)
   - Word embeddings
   - Sentence embeddings
-- Compression
-- Metrics
-- Tokenization
+- [Compression](/compression)
+- [Metrics](/metrics)
+- [Tokenization](/tokenization)
   - Subword-level
-- Transformers
+- [Transformers](/transformers)
   - Autoregressive (decoder)
   - Autoencoding (encoder)
   - Seq2Seq (enc+dec)
   - Multimodal
   - Retrival-based 
-- Translation
+- [Translation](/translation)
+- [Other](/other)
