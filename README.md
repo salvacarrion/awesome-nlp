@@ -3,7 +3,7 @@ Collection of NLP papers
 
 - [Embeddings](/embeddings)
   - [Word embeddings](/embeddings#word-embedding)
-  - [Sentence embeddings](/embeddings#sentece-embedding)
+  - [Sentence embeddings](/embeddings#sentence-embedding)
 - [Compression](/compression)
 - [Metrics](/metrics)
 - [Tokenization](/tokenization)
