@@ -10,7 +10,7 @@ Collection of NLP papers
   - [Subword-level](/tokenization#subword-level)
   - [Comparative studies](/tokenization#comparative-studies)
 - [Transformers](/transformers)
-  - [Architectures](/transfomers/architectures.md)
+  - [Architectures](/transformers/architectures.md)
     - [Autoregressive](/transformers/architectures.md#autoregressive-models-dec)
     - [Autoencoding](/transformers/architectures.md#autoencoding-enc)
     - [Seq2Seq](/transformers/architectures.md#seq2seq-encdec)
