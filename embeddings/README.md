@@ -30,3 +30,7 @@
 ### Sentence-BERT
 
 [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf), Nils Reimers and Iryna Gurevych
+
+### Positional embeddings (ICLR 2020)
+
+[Encoding Word Order in Complex Embeddings](https://arxiv.org/pdf/1912.12333.pdf), Benyou Wang, Donghao Zhao, Christina Lioma, Qiuchi Li, Peng Zhang, Jakob Grue Simonsen
