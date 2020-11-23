@@ -65,6 +65,12 @@ P(w) = PROD_j[ Sigmoid((input * w1) * w2[:, j]) = ((1, vocab)x(vocab, dim))x(dim
 
 [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf), Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov
 
+- **Summary: **Extension of Word2Vec to learn form char n-grams instead of complete words
+- **Core idea:** Use a bag of n-grams as additional features to capture some partial information about the local word order.
+- **Key achievement:** Efficient method for text classification
+- **Implementation details:**
+  - Hierarchical Softmax, DFS to discart small probabilities, top-k with binary heap, efficient mapping of n-grams with the hashing trick
+
 ## Sentence Embedding
 
 ### ELMo
