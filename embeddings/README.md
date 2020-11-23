@@ -2,7 +2,7 @@
 
 ## Word Embedding
 
-### Word2Vec
+### Word2Vec (ICLR 2013)
 
 [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781), Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
 
@@ -43,7 +43,7 @@ P(W) = Softmax(input * w1 * w2)
 P(w) = PROD_j[ Sigmoid((input * w1) * w2[:, j]) = ((1, vocab)x(vocab, dim))x(dim, 1)=(1, dim)x(dim, 1)=(1,1)]. // j=[1..L(w)] => L(w=00101)=5
 ```
 
-### Word2Vec (follow-up)
+### Word2Vec v2 (NIPS 2013)
 
 [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
 
@@ -57,15 +57,24 @@ P(w) = PROD_j[ Sigmoid((input * w1) * w2[:, j]) = ((1, vocab)x(vocab, dim))x(dim
 
 **Key achievement:** Incremental improvements over Word2vec (v1)
 
-### GloVe
+### GloVe (EMNLP 2014)
 
 [GloVe: Global Vectors for Word Representation](https://www-nlp.stanford.edu/pubs/glove.pdf), Jeffrey Pennington, Richard Socher, Christopher D. Manning
 
-### FastText
+**Summary:** Analysis of the origin of semantic and syntactic regularities in vector space representation of words. Proposal of a new global log-bilinear regression model.
+
+**Core idea:** Word vector learning should be with ratios of co-occurrence probabilities rather than the probabilities themselves
+
+**Key achievement:** A new global log-bilinear regression model for the unsupervised
+learning of word representations that outperforms other models on word analogy, word similarity, and named entity recognition tasks.
+
+> It is a good exercise to derive the equations from scratch.
+
+### FastText (Arxiv 2016)
 
 [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf), Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov
 
-- **Summary: **Extension of Word2Vec to learn form char n-grams instead of complete words
+- **Summary: ** Model for text classification and representation learning. Extension of Word2Vec to learn form char n-grams (instead of complete words).
 - **Core idea:** Use a bag of n-grams as additional features to capture some partial information about the local word order.
 - **Key achievement:** Efficient method for text classification
 - **Implementation details:**
