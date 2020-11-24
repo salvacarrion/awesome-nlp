@@ -51,8 +51,8 @@ P(w) = PROD_j[ Sigmoid((input * w1) * w2[:, j]) = ((1, vocab)x(vocab, dim))x(dim
 
 **Core idea:** 
 
-- Subsampling of frequent words to obtain a significant speedup and more regular word representations. 
-- The hierarchical softmax can be replaced with Negative Sampling (derived from the Noise Contrastive Estimation)
+- Subsampling of frequent words to obtain a significant speedup and more regular word representations. (*Remove % of frequent pairs*)
+- The hierarchical softmax can be replaced with Negative Sampling (derived from the Noise Contrastive Estimation). (*Select the positive target and k negative targets randomly, based on their unigram probabilities*)
 - Learning phrases: Using a simple data-driven approach to find phrases such as "New York Times" and expand the vocabulary considering them as a single token.
 
 **Key achievement:** Incremental improvements over Word2vec (v1)
@@ -97,3 +97,30 @@ learning of word representations that outperforms other models on word analogy, 
 ### Positional embeddings (ICLR 2020)
 
 [Encoding Word Order in Complex Embeddings](https://arxiv.org/pdf/1912.12333.pdf), Benyou Wang, Donghao Zhao, Christina Lioma, Qiuchi Li, Peng Zhang, Jakob Grue Simonsen
+
+### Others
+
+### Embedding models comparisson (TACL 2015)
+
+[Improving Distributional Similarity with Lessons Learned from Word Embeddings](http://www.aclweb.org/anthology/Q15-1016), Omer Levy, Yoav Goldberg, Ido Dagan
+
+- **Summary: ** Shows that when all word embedding methods are allowed to tune a similar set of hyperparameters, their performance is largely comparable
+- **Core idea:** There is no consistent advantage to one algorithmic approach over another
+- **Key achievement:** Show insignificant performance differences between the methods, with no global advantage to any single approach over the others.
+
+### Evaluation of word embedding (EMNLP 2015)
+
+[Evaluation methods for unsupervised word embeddings](http://www.aclweb.org/anthology/D15-1036), Tobias Schnabel, Igor Labutov, David Mimno, Thorsten Joachims
+
+- **Summary: ** Present new evaluation techniques that directly compare embeddings with respect to specific queries
+- **Core idea:** Different tasks favor different embeddings
+- **Key achievement:**  Evaluation framework based on direct comparisons between embeddings
+
+### Word Embedding dimensionality (NIPS 2018)
+
+[On the Dimensionality of Word Embedding](https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf), Zi Yin, Yuanyuan Shen
+
+- **Summary: ** Theoretical understanding of word embedding and its dimensionality
+- **Core idea:** There is a fundamental bias-variance trade-off in dimensionality selection for word embeddings (existence of an optimal dimensionality)
+- **Key achievement:**  Pairwise Inner Product (PIP) loss, a metric of dissimilarity between word embeddings
+
