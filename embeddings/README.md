@@ -82,9 +82,29 @@ learning of word representations that outperforms other models on word analogy, 
 
 ## Sentence Embedding
 
-### ELMo
+### ELMo (NAACL 2018)
 
 [Deep contextualized word representations](https://arxiv.org/pdf/1802.05365.pdf), Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer
+
+- **Summary: ** d
+- **Core idea:** d
+- **Key achievement:** d
+
+### ULMfit (ACL 2018)
+
+[Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146), Jeremy Howard, Sebastian Ruder
+
+- **Summary: ** d
+- **Core idea:** d
+- **Key achievement:** d
+
+### BERT (NAACL 2019)
+
+[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805), Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
+
+- **Summary: ** d
+- **Core idea:** d
+- **Key achievement:** d
 
 ### InferSent
 
