@@ -82,13 +82,27 @@ learning of word representations that outperforms other models on word analogy, 
 
 ## Sentence Embedding
 
+### CNN char-embeddings + LSTM (2016)
+
+[Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf), Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, Yonghui Wu
+
+- **Summary: ** Extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language
+- **Core idea:** For large scale LM, use char CNN inputs, LSTM with large hidden states, importance sampling as "large scale softmax" and ensemble models
+- **Key achievement:**  Training RNN LMs on large amounts of data
+
+> Importance sampling reduces the computational complexity of the softmax by estimating the normalizing factor. 
+>
+> When using importance sampling with the CNN softmax, a small correction factor must be added to calculate the logit, otherwise the model cannot differentiate between words with similar spelling but with very different meaning. [See review](http://www.stochasticgrad.com/article/exploring_limits_language_modeling)
+
 ### ELMo (NAACL 2018)
 
 [Deep contextualized word representations](https://arxiv.org/pdf/1802.05365.pdf), Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer
 
-- **Summary: ** d
-- **Core idea:** d
-- **Key achievement:** d
+- **Summary: ** Introduces a novel way to use language models for word representation in-context.
+- **Core idea:** Different layers learn different abstraction of the text. Hence, the word embedding is the learned weighted sum of all the hidden layers
+- **Key achievement:** Learning high-quality deep context-dependent representations
+
+> *Note: The model -per se- was based on prior work: Exploring the Limits of Language Modeling*
 
 ### ULMfit (ACL 2018)
 
