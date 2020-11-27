@@ -116,9 +116,11 @@ learning of word representations that outperforms other models on word analogy, 
 
 [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805), Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
 
-- **Summary: ** d
-- **Core idea:** d
-- **Key achievement:** d
+- **Summary:** State-of-the-art, contextual and bidirectional LM suitable to be fine-tuned on broad range of NLP task
+- **Core idea:** 
+  - Bidirectionality: Mask some words in the input and predict those masked words
+  - Relationships: Given two sentences A and B, predict if B comes after A or if it is just a random one.
+- **Key achievement:** State-of-the-art language model
 
 ### InferSent
 
