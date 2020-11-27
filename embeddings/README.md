@@ -74,7 +74,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf), Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov
 
-- **Summary: ** Model for text classification and representation learning. Extension of Word2Vec to learn form char n-grams (instead of complete words).
+- **Summary:** Model for text classification and representation learning. Extension of Word2Vec to learn form char n-grams (instead of complete words).
 - **Core idea:** Use a bag of n-grams as additional features to capture some partial information about the local word order.
 - **Key achievement:** Efficient method for text classification
 - **Implementation details:**
@@ -86,7 +86,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf), Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, Yonghui Wu
 
-- **Summary: ** Extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language
+- **Summary:** Extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language
 - **Core idea:** For large scale LM, use char CNN inputs, LSTM with large hidden states, importance sampling as "large scale softmax" and ensemble models
 - **Key achievement:**  Training RNN LMs on large amounts of data
 
@@ -98,7 +98,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Deep contextualized word representations](https://arxiv.org/pdf/1802.05365.pdf), Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer
 
-- **Summary: ** Introduces a novel way to use language models for word representation in-context.
+- **Summary:** Introduces a novel way to use language models for word representation in-context.
 - **Core idea:** Different layers learn different abstraction of the text. Hence, the word embedding is the learned weighted sum of all the hidden layers
 - **Key achievement:** Learning high-quality deep context-dependent representations
 
@@ -108,7 +108,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146), Jeremy Howard, Sebastian Ruder
 
-- **Summary: ** d
+- **Summary:** d
 - **Core idea:** d
 - **Key achievement:** d
 
@@ -140,7 +140,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Improving Distributional Similarity with Lessons Learned from Word Embeddings](http://www.aclweb.org/anthology/Q15-1016), Omer Levy, Yoav Goldberg, Ido Dagan
 
-- **Summary: ** Shows that when all word embedding methods are allowed to tune a similar set of hyperparameters, their performance is largely comparable
+- **Summary:** Shows that when all word embedding methods are allowed to tune a similar set of hyperparameters, their performance is largely comparable
 - **Core idea:** There is no consistent advantage to one algorithmic approach over another
 - **Key achievement:** Show insignificant performance differences between the methods, with no global advantage to any single approach over the others.
 
@@ -148,7 +148,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [Evaluation methods for unsupervised word embeddings](http://www.aclweb.org/anthology/D15-1036), Tobias Schnabel, Igor Labutov, David Mimno, Thorsten Joachims
 
-- **Summary: ** Present new evaluation techniques that directly compare embeddings with respect to specific queries
+- **Summary:** Present new evaluation techniques that directly compare embeddings with respect to specific queries
 - **Core idea:** Different tasks favor different embeddings
 - **Key achievement:**  Evaluation framework based on direct comparisons between embeddings
 
@@ -156,7 +156,7 @@ learning of word representations that outperforms other models on word analogy, 
 
 [On the Dimensionality of Word Embedding](https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf), Zi Yin, Yuanyuan Shen
 
-- **Summary: ** Theoretical understanding of word embedding and its dimensionality
+- **Summary:** Theoretical understanding of word embedding and its dimensionality
 - **Core idea:** There is a fundamental bias-variance trade-off in dimensionality selection for word embeddings (existence of an optimal dimensionality)
 - **Key achievement:**  Pairwise Inner Product (PIP) loss, a metric of dissimilarity between word embeddings
 
