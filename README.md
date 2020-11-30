@@ -30,4 +30,6 @@ Collection of NLP papers
 - [How GPT3 Works - Visualizations and Animations](http://jalammar.github.io/how-gpt3-works-visualizations-animations/), Alammar, 2020
 - [Hierarchical Softmax](https://leimao.github.io/article/Hierarchical-Softmax/), Lei Mao
 - [Noise Contrastive Estimation](https://leimao.github.io/article/Noise-Contrastive-Estimation/), Lei Mao
+- [Applying word2vec to Recommenders and Advertising](http://mccormickml.com/2018/06/15/applying-word2vec-to-recommenders-and-advertising/), Chris McCormick
+- Google 
 

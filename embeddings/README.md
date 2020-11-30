@@ -160,3 +160,18 @@ learning of word representations that outperforms other models on word analogy, 
 - **Core idea:** There is a fundamental bias-variance trade-off in dimensionality selection for word embeddings (existence of an optimal dimensionality)
 - **Key achievement:**  Pairwise Inner Product (PIP) loss, a metric of dissimilarity between word embeddings
 
+### XML (NIPS 2019)
+
+[Cross-lingual Language Model Pretraining](https://arxiv.org/abs/1901.07291), Guillaume Lample, Alexis Conneau
+
+- **Summary:** Learn cross-lingual language models from: 1) an unsupervised method, and 2) supervised method.
+- **Core idea:** Translation language modeling (TLM) objective (Mask words in both the source and target sentences, but to predict a word masked in the source sentence, the model can either attend to its surrounding or to the target sentence)
+- **Key achievement:**  Demonstrating the effectiveness of cross-lingual language model pretraining on multiple cross-lingual understanding 
+
+### Language-agnostic BERT (2020)
+
+[Language-agnostic BERT Sentence Embedding](https://arxiv.org/abs/2007.01852), Fangxiaoyu Feng, Yinfei Yang, Daniel Cer, Naveen Arivazhagan, Wei Wang
+
+- **Summary:** Adaptation of multilingual BERT to produce language-agnostic sentence embeddings 
+- **Core idea:** Combine masked language model (MLM) and translation language model (TLM) pretraining with a translation ranking task using bi-directional dual encoders
+- **Key achievement:**  New state-of-the-art results several bitext retrieval tasks
