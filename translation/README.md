@@ -27,3 +27,8 @@
 ### Transformer
 
 [Attention is All You Need](https://arxiv.org/abs/1706.03762), Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
+
+### Survey of Multilingual NMT (ACL 2020)
+
+[A Comprehensive Survey of Multilingual Neural Machine Translation](https://arxiv.org/abs/2001.01115), Raj Dabre, Chenhui Chu, Anoop Kunchukuttan
+
