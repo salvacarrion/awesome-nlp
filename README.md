@@ -31,5 +31,3 @@ Collection of NLP papers
 - [Hierarchical Softmax](https://leimao.github.io/article/Hierarchical-Softmax/), Lei Mao
 - [Noise Contrastive Estimation](https://leimao.github.io/article/Noise-Contrastive-Estimation/), Lei Mao
 - [Applying word2vec to Recommenders and Advertising](http://mccormickml.com/2018/06/15/applying-word2vec-to-recommenders-and-advertising/), Chris McCormick
-- Google 
-
