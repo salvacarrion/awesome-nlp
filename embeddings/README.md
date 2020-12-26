@@ -128,7 +128,11 @@ learning of word representations that outperforms other models on word analogy, 
 
 ### Sentence-BERT
 
-[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf), Nils Reimers and Iryna Gurevych
+[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084), Nils Reimers and Iryna Gurevych
+
+- **Summary:** Sentence embeddings using siamese BERT-like networks
+- **Core idea:** Create a simese network using two BERT-base models
+- **Key achievement:** Allow ys to compute sentence similarty efficiently using BERT
 
 ### Positional embeddings (ICLR 2020)
 
@@ -160,6 +164,23 @@ learning of word representations that outperforms other models on word analogy, 
 - **Core idea:** There is a fundamental bias-variance trade-off in dimensionality selection for word embeddings (existence of an optimal dimensionality)
 - **Key achievement:**  Pairwise Inner Product (PIP) loss, a metric of dissimilarity between word embeddings
 
+## Multilingual sentence embeddings
+
+### mBERT (2018)
+
+Pretrained (BERT) model on the top 104 languages with the largest Wikipedia using a masked language modeling (MLM) objective.
+
+- **BERT paper:** [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+- **Multilingual BERT:** [repo](https://github.com/google-research/bert/blob/master/multilingual.md#list-of-languages)
+
+### LASER (2018)
+
+[Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond](https://arxiv.org/abs/1812.10464), Mikel Artetxe, Holger Schwenk
+
+- **Summary:** Autoencoder architecture using BiLSTMs and a shared BPE vocabulary for 93 languages
+- **Core idea:** Language-agnostic representation
+- **Key achievement:**  
+
 ### XML (NIPS 2019)
 
 [Cross-lingual Language Model Pretraining](https://arxiv.org/abs/1901.07291), Guillaume Lample, Alexis Conneau
@@ -168,10 +189,30 @@ learning of word representations that outperforms other models on word analogy, 
 - **Core idea:** Translation language modeling (TLM) objective (Mask words in both the source and target sentences, but to predict a word masked in the source sentence, the model can either attend to its surrounding or to the target sentence)
 - **Key achievement:**  Demonstrating the effectiveness of cross-lingual language model pretraining on multiple cross-lingual understanding 
 
-### Language-agnostic BERT (2020)
+### XML-R (NIPS 2019)
+
+[Unsupervised Cross-lingual Representation Learning at Scale](https://arxiv.org/abs/1901.07291), Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, Veselin Stoyanov
+
+- **Summary: **
+- **Core idea:**  
+- **Key achievement:**  
+
+### m~USE (2019)
+
+[Multilingual Universal Sentence Encoder for Semantic Retrieval](https://ai.googleblog.com/2019/07/multilingual-universal-sentence-encoder.html)
+
+### LaBSE (2020)
 
 [Language-agnostic BERT Sentence Embedding](https://arxiv.org/abs/2007.01852), Fangxiaoyu Feng, Yinfei Yang, Daniel Cer, Naveen Arivazhagan, Wei Wang
 
 - **Summary:** Adaptation of multilingual BERT to produce language-agnostic sentence embeddings 
 - **Core idea:** Combine masked language model (MLM) and translation language model (TLM) pretraining with a translation ranking task using bi-directional dual encoders
 - **Key achievement:**  New state-of-the-art results several bitext retrieval tasks
+
+### Multilingual knowledge distillation
+
+[Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation](https://arxiv.org/abs/2004.09813), Nils Reimers, Iryna Gurevych
+
+- **Summary:** Minimize the MSE loss between the teacher and the student model for the source sentence, and the target sentence: `MSE[MT(si)-MS(sj)]+MSE[(MT(sj)-MS(tj))]`
+- **Core idea:** Multilingual knowledge distillation following a teacher-student approach
+- **Key achievement:**  

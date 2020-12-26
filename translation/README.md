@@ -1,5 +1,7 @@
 # Translation
 
+## Architectures
+
 ### Vanilla Seq2Seq
 
 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215), Ilya Sutskever, Oriol Vinyals, Quoc V. Le
@@ -28,7 +30,28 @@
 
 [Attention is All You Need](https://arxiv.org/abs/1706.03762), Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
 
+## Multilingual
+
 ### Survey of Multilingual NMT (ACL 2020)
 
 [A Comprehensive Survey of Multilingual Neural Machine Translation](https://arxiv.org/abs/2001.01115), Raj Dabre, Chenhui Chu, Anoop Kunchukuttan
+
+### M2M-100 (Arxiv 2020)
+
+[Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125), Facebook
+
+## Systems
+
+### Iterative training
+
+[Facebook AI's WAT19 Myanmar-English Translation Task Submission](https://arxiv.org/abs/1910.06848), Facebook
+
+**Summary:** 1) Train backtranslation system using parallel data, 2) Translate monolingual corpuses using this trained system. 3) Retrain the backtranslation system 4) Go to #1
+
+## Tools
+
+[VizSeq: A Visual Analysis Toolkit for Text Generation Tasks](https://arxiv.org/abs/1909.05424), Changhan Wang, Anirudh Jain, Danlu Chen, Jiatao Gu
+
+- **Summary: ** A Visual Analysis Toolkit for Text Generation (Translation, Captioning, Summarization, etc.)
+- **Link:** [https://facebookresearch.github.io/vizseq/](https://facebookresearch.github.io/vizseq/)
 
