@@ -2,22 +2,11 @@
 Collection of NLP papers
 
 - [Embeddings](/embeddings)
-  - [Word embeddings](/embeddings#word-embedding)
-  - [Sentence embeddings](/embeddings#sentence-embedding)
 - [Compression](/compression)
 - [Metrics](/metrics)
 - [Question Answering](/question-answering)
 - [Tokenization](/tokenization)
-  - [Subword-level](/tokenization#subword-level)
-  - [Comparative studies](/tokenization#comparative-studies)
 - [Transformers](/transformers)
-  - [Architectures](/transformers/architectures.md)
-    - [Autoregressive](/transformers/architectures.md#autoregressive-models-dec)
-    - [Autoencoding](/transformers/architectures.md#autoencoding-enc)
-    - [Seq2Seq](/transformers/architectures.md#seq2seq-encdec)
-    - [Multimodal](/transformers/architectures.md#multimodal)
-    - [Retrival-based](/transformers/architectures.md#retrieval-based-models)
-  - [Techniques](/transformers/techniques.md)
 - [Translation](/translation)
 - [Generic](/generic)
 
