@@ -30,15 +30,15 @@ Types:
 
 - **Summary:** Transformer for abstractive text summarization
 
+### ProphetNet (13 Jan 2020)
+
+[ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training,](https://arxiv.org/abs/2001.04063) by Yu Yan, Weizhen Qi, Yeyun Gong, Dayiheng Liu, Nan Duan, Jiusheng Chen, Ruofei Zhang, Ming Zhou.
+
 ### MBart (22 Jan 2020)
 
 [Multilingual Denoising Pre-training for Neural Machine Translation](https://arxiv.org/abs/2001.08210) by Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov Marjan Ghazvininejad, Mike Lewis, Luke Zettlemoyer.
 
 - **Summary:** Multilingual BART
-
-### ProphetNet
-
-[ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training,](https://arxiv.org/abs/2001.04063) by Yu Yan, Weizhen Qi, Yeyun Gong, Dayiheng Liu, Nan Duan, Jiusheng Chen, Ruofei Zhang, Ming Zhou.
 
 ## Autoregressive models: Dec
 
@@ -98,78 +98,78 @@ Types:
 
 ## Autoencoding: Enc
 
-### BERT
+### BERT (11 Oct 2018)
 
 [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805), Jacob Devlin et al.
 
 - **Summary:** Encoder part of the transformer with MLM trained in a self-supervised way.
 
-### ALBERT
-
-[ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942), Zhenzhong Lan et al.
-
-- **Summary:** BERT-like network to lower the memory footprint and increase the training speed
-
-### RoBERTa
-
-[RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692), Yinhan Liu et al.
-
-- **Summary:** BERT optimized
-
-### DistilBERT
-
-[DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108), Victor Sanh et al.
-
-- **Summary:** BERT distilled using a teacher-student approach. Same performance, half the size.
-
-### XLM
+### XLM (22 Jan 2019)
 
 [Cross-lingual Language Model Pretraining](https://arxiv.org/abs/1901.07291), Guillaume Lample and Alexis Conneau
 
 - **Summary:** Cross-lingual embeddings using: Shared BPE vocabularies, CLM, MLM and TLM
 
-### XLM-RoBERTa
+### RoBERTa (26 Jul 2019)
+
+[RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692), Yinhan Liu et al.
+
+- **Summary:** BERT optimized
+
+### ALBERT (26 Sep 2019)
+
+[ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942), Zhenzhong Lan et al.
+
+- **Summary:** BERT-like network to lower the memory footprint and increase the training speed
+
+### DistilBERT (2 Oct 2019)
+
+[DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108), Victor Sanh et al.
+
+- **Summary:** BERT distilled using a teacher-student approach. Same performance, half the size.
+
+### XLM-RoBERTa (5 Nov 2019)
 
 [Unsupervised Cross-lingual Representation Learning at Scale](https://arxiv.org/abs/1911.02116), Alexis Conneau et al.
 
 - **Summary:** XML with RoBERTa, trained with more data (100 language)
 
-### FlauBERT
+### FlauBERT (11 Dec 2019)
 
 [FlauBERT: Unsupervised Language Model Pre-training for French](https://arxiv.org/abs/1912.05372), Hang Le et al.
 
-### ELECTRA
+### ELECTRA (23 Mar 2020)
 
 [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators](https://arxiv.org/abs/2003.10555), Kevin Clark et al.
 
 - **Summary:** Efficient alternative to MLM. Instead of masking the input, they replace some tokens plausible alternatives sampled from a small generator network. Then, they train a discriminator.
 
-### Funnel Transformer
-
-[Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing](https://arxiv.org/abs/2006.03236), Zihang Dai et al.
-
-### Longformer
+### Longformer (10 Apr 2020)
 
 [Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150), Iz Beltagy et al.
 
 - **Summary:** Transformer with an attention mechanism that scales linearly with sequence length
 
-### GPT-3
+### Funnel Transformer (5 Jun 2020)
+
+[Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing](https://arxiv.org/abs/2006.03236), Zihang Dai et al.
+
+### GPT-3 (28 May 2020)
 
 [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v2), by OpenAI
 
 ## Multimodal
 
-### MMBT
+### MMBT (6 Sep 2019)
 
 [Supervised Multimodal Bitransformers for Classifying Images and Text](https://arxiv.org/abs/1909.02950), Douwe Kiela et al.
 
 ## Retrieval-based models
 
-### DPR
+### DPR (10 Apr 2020)
 
 [Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/abs/2004.04906), Vladimir Karpukhin et al.
 
-### RAG
+### RAG (22 May 2020)
 
 [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401), Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela
