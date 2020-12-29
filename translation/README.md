@@ -117,3 +117,143 @@ energy = Q*K
 - **Summary: ** A Visual Analysis Toolkit for Text Generation (Translation, Captioning, Summarization, etc.)
 - **Link:** [https://facebookresearch.github.io/vizseq/](https://facebookresearch.github.io/vizseq/)
 
+## WMT20
+
+[Findings of the 2020 Conference on Machine Translation (WMT20)](https://www.aclweb.org/anthology/2020.wmt-1.1.pdf)
+
+> Classical WTM task
+> **This year:** News translation task and the similar language translation task
+>
+> 38 participans (153 submissions)
+
+- **Summary:** 
+  - Many system surpassing human translations
+  - Many teams use FairSeq
+  - Similar language task(top):
+    - INFOSYS: Ensemble of FairSeq models + back-translation.
+    - IITDELHI: 1) fine-tuning over pretrained mBART; 2) Transformer architecture with 12 encoder and de- coder layers. (+lots of data)
+    - WIPRO-RIT: Single multilingual NMT system based on the transformer architecture
+  - News tasks(top):
+    - Deepmind: 
+      - Document-level translation system built upon noisy channel factorization
+      - Lots of data, back-translation, distillation, fine-tuning, domain adaptation, MonteCarlo Tree Search decoding and uncertainty estimation, specialized length models and sentence segmentation
+    - Facebook AI: 
+      - Low-resource: 1) Exploit all available data. 2) Adapt domain
+      - Non-contrained: Iterative backtranslation and self-training and strong language models for noisy channel reranking. (Data from CommonCrawl)
+    - WeChat:
+      - Transformer with effective variants and the DTMT architecture
+      - Data selection, several synthetic data generation approaches (back-translation, knowledge distillation, and iterative in-domain knowledge transfer), advanced fine-tuning approaches and self-bleu based model ensemble.
+    - VolcTrans:
+      - Very deep Transformer or dynamic convolution models up to 50 encoder layers
+      - Strong focus on diversification of the (synthetic) training data
+      - Iterative back-translation, knowledge distillation, model ensemble and development set fine-tuning, multiple scalings, dynamic convolution, random upsamplings, back-translated corpus variants, random ensembling which uses not a fixed set of ensembled models but rather a random checkpoint of each of them.
+    - Oppo:
+      - Corpus filtering, iterative forward and backward translation, fine-tuning on the original parallel data, ensembling of several different models, and complex re-ranking which uses forward scorers, backward scorers) and language models
+
+**Details:**
+
+- Evaluation: SacreBLEU
+  - Automatic: BLEU, RIBES, and TER.
+  - Manual: Direct assesment by humans, Mechanical Turk and a pool of linguists
+- Domain: 
+  - Training:
+    - Parallel: >500M pairs (Europarl, NewsCommentary, CommonCrawl, ParaCrawl, EU Press, Yandex 1M, CzEng, WikiTitles, CCMT, UN, Extra Tamil-English, Extra Japanese-English, Nunavut Hansard, Opus Corpus, Synthetic, Wikimatrix)
+    - Monoloingual: >10,000M senteces (Monolingual Wikipedia, News, Document-Split, Common Crawl)
+  - Test domain: Online news websites
+
+[Findings of the First Shared Task on Lifelong Learning Machine Translation](https://www.aclweb.org/anthology/2020.wmt-1.2.pdf)
+
+> Lifelong learning can be defined as the ability to continually acquire new and retain previous knowledge. It allows MT systems to adapt to new vocabularies and topics, and produce accurate translations across time.
+>
+> => 0 participants (excluding organizers)?
+
+- **Summary:** 
+  - Seems that the only participants are the ones who created this task
+  - Your system has to be integrated into the BEAT platform and require you to rethink the code so that everything is done in memory
+  - **Personal opinion:** Hard to understand, evaluate, too many open challenges, and of out focus (Domain adaptation, Instance-based adaptation, Unsupervised learning, Active learning, Interactive learning)
+
+[Findings of the WMT 2020 Shared Task on Chat Translation](https://www.aclweb.org/anthology/2020.wmt-1.3.pdf)
+
+> This tasks deals with the fact that the conversations are bilingual, less planned, more informal, and often ungrammatical.
+>
+> => 6 participating teams (14 submissions)
+
+- **Summary:** 
+  - Relevance of context-aware systems, document-level models, copy placeholder for rare characters, synthetic noise generation, ensembles, BERT, XML, transfomer-big,...
+
+[Findings of the WMT 2020 Shared Task on Machine Translation Robustness](https://www.aclweb.org/anthology/2020.wmt-1.4.pdf)
+
+> Test current machine translation systems in their ability to handle challenges facing MT models to be deployed in the real world, including domain diversity and non-standard texts common in user generated content, especially in social media. (**This year: Evaluate a general MT system’s in Zero-shot and Few-Shot scenarios**)
+>
+> =>  11 participating teams (59 submissions)
+
+- **Summary:** 
+  - Very few teams introduced specific techniques for robustness, such as augmenting training data with synthetic noise.
+  - Few-shot submissions managed to outperform online systems in most test sets
+  - Introduced a flag for catastrophic errors (novel way to evaluate translations)
+  - Human-translated references contain catastrophic errors as well
+
+[Findings of the WMT 2020 Shared Task on Automatic Post-Editing](https://www.aclweb.org/anthology/2020.wmt-1.75.pdf)
+
+> Automatically correcting the output of a “black-box” machine translation system by learning from existing human corrections of different sentences
+>
+> => 6 teams (11 runs) for English-German task.  2 teams (2 runs each) for the English-Chinese task 
+
+- **Summary:** 
+  - On English-German, the top-ranked system improves over the baseline by -11.35 TER and +16.68 BLEU points
+  - On English-Chinese the improvements are respectively up to -12.13 TER and +14.57 BLEU points
+  - Winning system (HW-TSC): Multi-source (*src*, *mt*, *auxiliary mt*) + Transformer (+bottleneck adapter layers)
+
+[Findings of the WMT 2020 Biomedical Translation Shared Task: Basque, Italian and Russian as New Additional Languages](https://www.aclweb.org/anthology/2020.wmt-1.76.pdf)
+
+> Access to accurate biomedical information is specifically critical and machine translation (MT) can contribute to making health information available to health professionals and the general public in their own language.
+>
+> => 20 teams
+
+- **Summary:** 
+  - Many teams use Fairseq, trained their models, half fine-tune them, half used backtranslation and a few used language models
+  - Overall translation quality is high, with many perfect translation for high-resource languages
+  - Some translation require deep background knowledge, abbreviations and acronims are difficult, some medical terms were literally translated, choosing an English synonym of a translated German word altered the original German meaning entirely, problems from unknown vocabularies...
+
+[Results of the WMT20 Metrics Shared Task](https://www.aclweb.org/anthology/2020.wmt-1.77.pdf)
+
+> Automatic metrics that score MT output by comparing them with a reference translation generated by human translators
+>
+> =>  10 research groups (27 metrics; 4 of which are reference-less “metrics”)
+
+- **Summary:** 
+  - Metrics based on word or sentence-level embeddings, achieve the highest performance
+  - The performance of the referencefree metrics has improved, and the correlations this year are competitive with the reference-based metrics, and in many cases, outperform BLEU.
+  - COMET-QE is good at recognising the high quality of human translations where BLEU falls short.
+
+[Findings of the WMT 2020 Shared Task on Parallel Corpus Filtering and Alignment](https://www.aclweb.org/anthology/2020.wmt-1.78.pdf)
+
+> Improving the quality of parallel corpora by filtering noisy training data.
+>
+> => 10 participants
+
+- **Summary:** (Incremental improvements) Improvements over the LASER baseline with a variety results measured by translation quality, optimal subset sizes, sentence length,...
+  - Techniques based on: XLM-RoBERTa, Yisi-2 scores, GTP-2, LASER-based...
+
+[Findings of the WMT 2020 Shared Task on Quality Estimation](https://www.aclweb.org/anthology/2020.wmt-1.79.pdf)
+
+> Automatic methods for estimating the quality of neural machine translation (MT) output at run-time, without the use of reference translations
+>
+> => 19 teams (1374 systems)
+
+- **Summary:** (Incremental improvements) Participating systems (WMT) show overall higher correlation with DA labels.
+
+[Findings of the WMT 2020 Shared Tasks in Unsupervised MT and Very Low Resource Supervised MT](https://www.aclweb.org/anthology/2020.wmt-1.80.pdf)
+
+> There is little to no parallel corpora for most of the 7000 languages spoken. This tasks deals with this problem.
+>
+> => 6 systems for the unsupervised shared task.  10 systems for the very low resource supervised task.
+
+- **Summary:**
+  - Transfer learning was a critical in all tasks (Unsupervised, Unsupervised with Multilingual Transfer, and Very Low Resource)
+  - For Unsupervised, transfer learning using monolingual corpora was needed
+  - For Unsupervised with Multilingual Transfer, the use of English-German bilingual corpora to initialize the Unsupervised system seems to have been highly effective
+  - For Very Low Resource, heavy usage of both types of transfer were made as well, with one particular focus being on efforts to leverage the similarity of Czech and Upper Sorbian using Czech/German parallel corpora.
+  - Word segmentation and the use of morphological information was useful
+  - There was a significant effort focused on trying to make Czech more like Upper Sorbian using a variety of tech- niques, and/or sampling German data like Upper Sorbian data.
+
